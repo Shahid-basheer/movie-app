@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap');
+.player-wrapper {
+   width: 100%;
+   height: auto;
+   background-color: black;
+   display: flex;
+  }
+
+.player {
+   width: 50%;
+   height: 100%;
+   padding-top: 30px;
+   
+  }
+
+  .player-details{
+     font-size: 24px;
+     font-weight: 100;
+     font-family: 'Changa', sans-serif;
+     color: #fff;
+     margin-left: 20px;
+     margin-top: 20px;
+  }
+  
+
+  .comment-box{
+     width: 100%;
+     height: 200px;
+     background-color:#373740;
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-top: 20px;
+  }
+
+  .comment-box textarea{
+     padding-top: 10px;
+     
+  }
+
+  .comment-list{
+     width: 100%;
+     height: 100vh;
+     background-color: rgb(26, 25, 25);
+     padding-right: 20px;
+     overflow-y: auto;
+  }
+
+  .comment-list span{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 13px;
+   color: #fff;
+  }
+
+  .comment-loop{
+     width: 100%;
+     height: auto;
+     
+     margin: 10px;
+     border: none;
+     border-bottom: 1px solid #fff;
+  }
+
+  .comment-loop h4{
+     font-family: sans-serif;
+     color: #fff;
+     font-weight: 800;
+     text-transform: capitalize;
+  }
+
+  #comment-box{
+     overflow-x: hidden;
+     resize: none;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #fff;
+     font-size: 20px;
+  }
+
+  #comment-box::-webkit-scrollbar{
+     display: none;
+  }
+
+  #date-comment-box span{
+  font-size: 10px;
+  color: #fff;
+  }
+  .recommend-video{
+   width: 50%;
+   height: auto;
+   padding-top: 30px;
+   overflow-y: auto;
+  }
+
+  .recommend-video p{
+     color: #fff;
+  }
+
+  .recommend-video h5{
+     color: #fff;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow-x: hidden;
+  }
+  .recommend-video div{
+     width: 300px;
+     height: 500px;
+     float: left;
+     margin: 10px;
+  }
+
+  .recommend-video div img{
+     width: 100%;
+     height: 50%;
+  }
+
+  .player-watch-btn{
+     margin-left: 10px;
+  }
+
+
+  .recommend-video::-webkit-scrollbar{
+   display: none;
+}
+
+.recommend-video {
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
+
+
+ .comment-box textarea{
+    width: 100%;
+    background-color:transparent;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: black;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    
+ }
+
+ .comment-box button{
+    float: right;
+    width: 200px;
+    height: 40px;
+    background-color:transparent;
+    outline:none;
+    border:3px solid turquoise;
+    margin-top: 20px;
+    color: #fff;
+ }
+
+ .color-publish{
+    color:green;
+    
+ }
+
+ @media(max-width:1280px){
+    .player{
+       width: 100%;
+    }
+    .recommend-video{
+       width: 0;
+       height: 0;
+    }
+
+ }
+
+ @media(max-width:800px){
+ .player{
+    margin-top: -108px;
+ }
+ .comment-list{
+    height: 80vh;
+ }
+ .comment-box button{
+    width: 100px;
+ }
+ }
+
+

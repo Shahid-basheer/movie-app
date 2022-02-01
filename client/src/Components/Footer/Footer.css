@@ -1,0 +1,13 @@
+.Footer{
+    width: 100%;
+    height: 400px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.Footer i{
+    font-size: 25px;
+    padding-left: 8%;
+    padding-top: 50px;
+}
+

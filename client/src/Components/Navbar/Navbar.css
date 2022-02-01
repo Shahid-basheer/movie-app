@@ -1,0 +1,96 @@
+html{
+    scroll-behavior: auto;
+}
+
+.Navbar {
+    width: 100%;
+    height: 60px;
+}
+
+
+.decoration{
+    text-decoration: none;
+}
+.social-icon{
+margin-top: 30px;
+margin-left: 20px;
+cursor: pointer;
+
+}
+.social-icon:first-child{
+    color: blue;
+}
+.social-icon:nth-child(2){
+    color: blue;
+}
+.social-icon:nth-child(3){
+    color: orangered;
+}
+.Navbar nav {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    font-size: 30px;
+    color: blue;
+    display: none;
+}
+
+.Navbar ul {
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+
+
+.Navbar ul li {
+    display: inline;
+    margin: 20px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 gray;
+    -webkit-transition: ease-out 0.9s;
+    -moz-transition: ease-out 0.9s;
+    transition: ease-out 1s;
+}
+
+.Navbar li:hover {
+    
+    box-shadow: inset 0 100px gray;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 3px;
+    transition: 0.9s;
+}
+
+@media (max-width:800px) {
+    .Navbar ul li {
+        display: block;
+        font-size: 25px;
+    }
+    .Navbar ul {
+        padding-top: 100px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        margin-left: -100%;
+        transition: 0.9s;
+        overflow: scroll;
+    }
+    .toggle {
+        display: block;
+    }
+}
